@@ -1,0 +1,802 @@
+/*Homepage CSS*/
+body {
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+  border: 2px solid black;
+  border-radius: 50%;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+  position: relative;
+    padding: 15px 40px;
+  border-bottom: 1px solid black;
+}
+
+.nav-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+    transition: opacity 0.3s ease;
+
+}
+nav a:hover {
+  opacity: 0.5;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.hero h1 {
+  font-size: clamp(3rem, 8vw, 9rem);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+.hero-info {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  padding-top: 15px;
+  margin-top: 30px;
+}
+.hero-image {
+  width: 100%;
+  height: 500px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+.home {
+  padding: 40px;
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero h1 {
+  margin: 0;
+}
+.home-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 100px 0;
+  border-bottom: 1px solid black;
+}
+.home-about h2 {
+  font-size: clamp(3rem, 6vw, 7rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  margin: 0;
+}
+
+.home-about-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0;
+}
+.home-about-link {
+  display: inline-block;
+  margin-top: 30px;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+    transition: opacity 0.3s ease;
+
+}
+.home-about-link:hover {
+  opacity: 0.5;
+}
+
+.home-lineup {
+  padding: 100px 0;
+}
+
+.home-lineup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+.home-lineup-header h2 {
+  font-size: clamp(3rem, 6vw, 7rem);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+  margin: 0;
+}
+
+.home-lineup-header span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.home-lineup-artists {
+  margin-top: 30px;
+}
+
+.home-lineup-artist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 1px solid black;
+  color: black;
+  text-decoration: none;
+}
+.home-about-stats {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+/*Artist Page CSS*/
+.artists-title {
+  font-size: clamp(3rem, 8vw, 9rem);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin: 0 0 50px;
+}
+.artists-page {
+  padding: 40px;
+}
+
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.artist-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  filter: grayscale(100%);
+  display: block;
+}
+.artist-card a {
+  color: black;
+  text-decoration: none;
+}
+
+.artist-card h2 {
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  margin: 15px 0 5px;
+}
+
+.artist-card p {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.artist-card {
+  overflow: hidden;
+}
+
+.artist-card img {
+  transition: transform 0.4s ease;
+}
+
+.artist-card:hover img {
+  transform: scale(1.03);
+}
+.artists-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.artists-header .artists-title {
+  margin-bottom: 0;
+}
+
+.add-artist-btn {
+  background: black;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.add-artist-btn:hover {
+  background: transparent;
+  color: black;
+  outline: 1px solid black;
+}
+.artist-search {
+  padding: 10px;
+  border: 1px solid black;
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom:  0;
+}
+.lineup-toolbar {
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+/*Artist Details Page CSS*/
+.artist-details {
+  padding: 40px;
+}
+
+.artist-details-title {
+  font-size: clamp(3rem, 8vw, 9rem);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+}
+
+.artist-details-image {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  display: block;
+}
+.artist-details-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 80px;
+  padding: 60px 0;
+  border-bottom: 1px solid black;
+}
+
+.artist-details-bio h2 {
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+.artist-details-bio p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.artist-details-info {
+  border-left: 1px solid black;
+  padding-left: 40px;
+}
+
+.artist-details-info p {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+.artist-details-info button {
+  background: transparent;
+  border: 1px solid black;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+.artist-details-info button:hover {
+  background: black;
+  color: white;
+}
+.artist-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  align-items: center;
+}
+
+.edit-artist-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.edit-artist-btn:hover {
+  background: transparent;
+  color: black;
+}
+
+.artist-actions button {
+  margin-top: 0;
+}
+/* Edit Artist + New Artist Page CSS */
+.edit-artist-form label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.edit-artist-form input,
+.edit-artist-form textarea,
+.edit-artist-form select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid black;
+  background: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.edit-artist-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.edit-artist-form input:focus,
+.edit-artist-form textarea:focus,
+.edit-artist-form select:focus {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+.edit-artist-form button {
+  background: black;
+  color: white;
+  border: 1px solid black;
+  padding: 15px 30px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.edit-artist-form button:hover {
+  background: transparent;
+  color: black;
+}
+/* Schedule Page CSS */
+.schedule-page {
+  padding: 40px;
+}
+
+.schedule-title {
+  font-size: clamp(3rem, 8vw, 9rem);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin: 0 0 50px;
+}
+.schedule-days {
+  display: flex;
+  gap: 0;
+  margin-bottom: 60px;
+  border-bottom: 1px solid black;
+}
+
+.schedule-days button {
+  flex: 1;
+  padding: 20px;
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.schedule-days button:hover {
+  background: #e5e5e5;
+}
+
+.schedule-days button.active {
+  background: black;
+  color: white;
+}
+.schedule-stage-title {
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  padding-bottom: 20px;
+  margin: 50px 0 25px;
+  border-bottom: 2px solid black;
+}
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.schedule-item a {
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.schedule-item a:hover {
+  text-decoration: underline;
+}
+
+.schedule-item span {
+  font-size: 18px;
+  font-weight: 600;
+}
+/*Tickets Page CSS*/
+.tickets-page {
+  padding: 40px;
+}
+
+.tickets-title {
+  font-size: clamp(3rem, 8vw, 9rem);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin: 0 0 50px;
+}
+.tickets-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.ticket-card {
+  border: 1px solid black;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+}
+
+.ticket-card h2 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin: 0 0 20px;
+}
+
+.ticket-description {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.ticket-price {
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-top: auto;
+  margin-bottom: 25px;
+}
+
+.ticket-card button {
+  background: black;
+  color: white;
+  border: 1px solid black;
+  padding: 18px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ticket-card button:hover {
+  background: transparent;
+  color: black;
+}
+.booking-form {
+  margin-top: 60px;
+  padding: 40px;
+  border: 1px solid black;
+  max-width: 600px;
+}
+
+.booking-form h2 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin: 0 0 30px;
+}
+.booking-form select,
+.booking-form input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid black;
+  background: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  margin: 10px 0 25px;
+  box-sizing: border-box;
+}
+.booking-total {
+  font-size: 32px;
+  font-weight: 800;
+  border-top: 1px solid black;
+  padding-top: 25px;
+  margin-top: 20px;
+}
+.booking-form button {
+  background: black;
+  color: white;
+  padding: 15px 30px;
+  border: 1px solid black;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;  
+  transition: all 0.3s ease;
+}
+.booking-form button:hover {
+  background: transparent;
+  color: black;
+}
+.booking-success {
+  font-size: 32px;
+  font-weight: 800;
+  color: green;
+  margin-top: 20px;
+}
+.booking-form h2.booking-success {
+  margin-top: 40px;
+}
+/* About Page CSS */
+.about-page {
+  padding: 40px;
+}
+.about-title {
+  font-size: clamp(3rem, 8vw, 9rem);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin: 0 0 50px;
+}
+.about-intro, .about-concept, .about-info {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 800px;
+  margin-bottom: 60px;
+    border-bottom: 1px solid black;
+      padding-bottom: 40px;
+
+
+}
+.about-intro h2 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin: 0 0 20px;
+}
+.about-intro h2,
+.about-concept h2,
+.about-info h2 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin: 0 0 20px;
+}
+.about-info p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+.about-info p strong {
+  font-weight: 800;
+  margin-right: 10px;
+  text-transform: uppercase;
+} 
+/*Not Found Page CSS*/
+.not-found-page {
+  display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: center;
+  min-height: 100vh;
+}
+.not-found-page h1 {
+  font-size: clamp(3rem, 8vw, 9rem);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+.not-found-page p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+.back-home-btn {
+  background: black;
+  color: white;
+  padding: 15px 30px;
+  border: 1px solid black;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;  
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.back-home-btn:hover {
+  background: transparent;
+  color: black;
+}
+
+/*NavBar CSS*/
+.hamburger {
+ display: block;
+ width: 25px;
+ height: 2px;
+ background-color: black;
+ position: relative;
+}
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: black;
+    position: absolute;
+
+}
+.hamburger::before {
+  top: -7px;
+}
+.hamburger::after {
+  bottom: -7px;
+}
+.nav-toggle {
+  display: none;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav-right {
+    display: none;
+  }
+  .nav-left {
+  display: none;
+}
+  .nav-toggle {
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+ .nav-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: auto;
+  background: white;
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 100;
+}
+ 
+ 
+nav {
+  min-height: 36px;
+}
+
+.nav-toggle {
+  margin-left: auto;
+}
+.artist-search {
+  min-width: 0;
+  box-sizing: border-box;
+}
+.lineup-toolbar {
+  flex-direction: column;
+  align-items: stretch;
+}
+.tickets-grid {
+  grid-template-columns: 1fr;
+}
+.booking-form {
+  padding: 20px;
+}
+.tickets-page {
+  padding: 20px 40px;
+}
+}
